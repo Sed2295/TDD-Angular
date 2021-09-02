@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+.social {
+    height: 41px;
+    line-height: 38px;
+}
+.social i {
+    line-height: 37px !important;
+    height: 40px !important;
+}
+.brand-logo{
+    padding: 8px !important;
+}
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: white;
+    background-color: #B71C1C;
+}
+.container{
+    width: 85% !important;
+}
+.filter {
+    padding: 5px 55px;
+}
+.row {
+    margin-bottom: 0;
+}
+.card-content a {
+    font-size: 18px;
+    padding-left: 5px;
+}
+.card-content .fa-heart{
+    color: pink;
+}
+.card-content .fa-youtube{
+    color: red;
+}
+.card-content .fa-bookmark{
+    color: orange;
+}
+.card-content .fa-heart{
+    color: red;
+}
+.card-content .fa-share-alt{
+    color: green;
+}
+.carousel {
+    perspective: 900px !important;
+    height: 250px !important;
+}
