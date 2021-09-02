@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.social {
+    height: 41px;
+    line-height: 38px;
+}
+.social i {
+    line-height: 37px !important;
+    height: 40px !important;
+}
