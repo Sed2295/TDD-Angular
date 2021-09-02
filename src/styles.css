@@ -7,3 +7,11 @@
     line-height: 37px !important;
     height: 40px !important;
 }
+.brand-logo{
+    padding: 8px !important;
+}
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: white;
+    background-color: #B71C1C;
+}
