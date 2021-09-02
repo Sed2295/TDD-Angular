@@ -24,3 +24,22 @@
 .row {
     margin-bottom: 0;
 }
+.card-content a {
+    font-size: 18px;
+    padding-left: 5px;
+}
+.card-content .fa-heart{
+    color: pink;
+}
+.card-content .fa-youtube{
+    color: red;
+}
+.card-content .fa-bookmark{
+    color: orange;
+}
+.card-content .fa-heart{
+    color: red;
+}
+.card-content .fa-share-alt{
+    color: green;
+}
