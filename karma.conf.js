@@ -12,6 +12,11 @@ module.exports = function (config) {
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
+    //Lo que usamos en el proyecto tambien se debe de instalar en karma conf
+    files: [
+      "./node_modules/jquery/dist/jquery.min.js",
+      "./node_modules/materialize-css/dist/js/materialize.min.js"
+    ],
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here
@@ -37,8 +42,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'ChromeHeadless'],
     //single run para que corra solo una vez y no no cause error a la hora de correr las pruebas en azure
+    //true para produccion o azure
+    //false para local
     singleRun: true,
     restartOnFileChange: true
   });
