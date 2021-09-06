@@ -38,7 +38,8 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false,
+    //single run para que corra solo una vez y no no cause error a la hora de correr las pruebas en azure
+    singleRun: true,
     restartOnFileChange: true
   });
 };
