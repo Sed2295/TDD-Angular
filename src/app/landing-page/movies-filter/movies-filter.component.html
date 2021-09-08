@@ -1,43 +1,29 @@
 <div class="row blue-grey lighten-4 filter">
     <h6 class="left-align"><strong>Compra tus entradas online.</strong></h6>
     <div class="input field col s12 m3 l3">
-        <select>
+        <select class="browser-default" [(ngModel)]="formFilter.date">
             <option value="" selected disabled>Fecha</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
+            <option *ngFor="let fecha of fechas">{{ fecha | date:'longDate' }}</option>
         </select>
     </div>
     <div class="input field col s12 m3 l3">
-        <select>
+        <select class="browser-default"  [(ngModel)]="formFilter.pelicula">
             <option value="" selected disabled>Pelicula</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
+            <option *ngFor="let movie of movies" [value]="movie.nombre">{{movie.nombre}}</option>
         </select>
     </div>
     <div class="input field col s12 m3 l3">
-        <select>
+        <select class="browser-default">
             <option value="" selected disabled>Formato</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
+            <!--Nota tambien se puede hacer el ngfor desde el servicIo ejemplo:-->
+            <!-- *ngFor="let formato of __landingService.formatos" -->
+            <option *ngFor="let formato of formatos">{{ formato }}</option>
         </select>
     </div>
     <div class="input field col s12 m3 l3">
-        <select>
+        <select class="browser-default">
             <option value="" selected disabled>Hora</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
-            <option>123</option>
+            <option *ngFor="let hora of horas">{{ hora }}</option>
         </select>
     </div>
 </div>

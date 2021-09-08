@@ -12,6 +12,9 @@ import { WeeklyBilboardsComponent } from './landing-page/weekly-bilboards/weekly
 import { PremieresComponent } from './landing-page/premieres/premieres.component';
 import { CarouselComponent } from './landing-page/carousel/carousel.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
+import { LandingPageService } from './services/landing-page.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,11 @@ import { FooterComponent } from './landing-page/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [LandingPageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
