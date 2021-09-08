@@ -4,147 +4,22 @@
             <h4 class="center-align">Proximos estrenos</h4>
         </div>
         <div class="row">
-            <div class="col s12 m2 l2 card">
+            <div class="col s12 m2 l2 card proximos-estrenos" *ngFor="let movie of premieres">
                 <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/what_if.jpg">
+                    <img class="activator" [src]="movie.imagen">
                 </div>
                 <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
+                    <a [href]="movie.trailer"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fas fa-language"></i></a>
                     <a href="#"><i class="fas fa-share-alt"></i></a>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
+                        {{ movie.nombre }}
                         <i class="material-icons">close</i>     
                     </span>
                     <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    </p>               
-                </div>
-            </div>
-            <div class="col s12 m2 l2 card">
-                <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/wonder_woman.jpg">
-                </div>
-                <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
-                    <a href="#"><i class="fas fa-language"></i></a>
-                    <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
-                        <i class="material-icons">close</i>     
-                    </span>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    </p>               
-                </div>
-            </div>
-            <div class="col s12 m2 l2 card">
-                <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/x-men.jpg">
-                </div>
-                <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
-                    <a href="#"><i class="fas fa-language"></i></a>
-                    <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
-                        <i class="material-icons">close</i>     
-                    </span>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    </p>               
-                </div>
-            </div>
-            <div class="col s12 m2 l2 card">
-                <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/mostruos_vs_alienigenas.jpg">
-                </div>
-                <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
-                    <a href="#"><i class="fas fa-language"></i></a>
-                    <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
-                        <i class="material-icons">close</i>     
-                    </span>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    </p>               
-                </div>
-            </div>
-            <div class="col s12 m2 l2 card">
-                <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/the_mummy.jpg">
-                </div>
-                <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
-                    <a href="#"><i class="fas fa-language"></i></a>
-                    <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
-                        <i class="material-icons">close</i>     
-                    </span>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    </p>               
-                </div>
-            </div>
-            <div class="col s12 m2 l2 card">
-                <div class="card-image waver-efect waves-blog waves-light">
-                    <img class="activator" src="../../../assets/imagenes/posters/RogueOneP.jpg">
-                </div>
-                <div class="card-content">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-bookmark"></i></a>
-                    <a href="#"><i class="fas fa-language"></i></a>
-                    <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">
-                        Nombre pelicula
-                        <i class="material-icons">close</i>     
-                    </span>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                        {{ movie.descripcion }}
                     </p>               
                 </div>
             </div>
